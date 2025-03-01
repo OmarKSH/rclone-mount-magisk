@@ -71,14 +71,14 @@ set_permissions() {
             ;;
     esac
 
-    if [[ -e /sdcard/.rclone/rclone.conf ]]; then
+    if [[ -e /data/adb/rclone/rclone.conf ]]; then
         export INTERACTIVE=1
         ui_print "+ Attempting to mount your [Remotes]:"
         ui_print "+ please wait..."
         ui_print ""
         MODDIR=$MODPATH $MODPATH/system/bin/rclone remount
     else
-        ui_print "'/sdcard/.rclone/rclone.conf' not found!"
+        ui_print "'/data/adb/rclone/rclone.conf' not found!"
         ui_print
         ui_print "Additional setup required..."
         ui_print "------------------------------------"

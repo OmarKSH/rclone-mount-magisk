@@ -1,5 +1,5 @@
 echo "Un-mounting remotes..."
-CONFIGFILE=/sdcard/.rclone/rclone.conf
+CONFIGFILE=/data/adb/rclone/rclone.conf
 CLOUDROOTMOUNTPOINT=/mnt/cloud/
 mkdir -p $CLOUDROOTMOUNTPOINT
 
