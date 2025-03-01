@@ -3,8 +3,8 @@
 ui_print "+ Extracting rclone to $MODPATH/rclone"
 cp -af $MODPATH/common/binary/$ARCH/rclone $MODPATH/rclone
 
-ui_print "+ Extracting fusermount to $MODPATH/system/bin/fusermount"
-cp -af $MODPATH/common/binary/$ARCH/fusermount $MODPATH/system/bin/fusermount
+ui_print "+ Extracting fusermount3 to $MODPATH/system/bin/fusermount3"
+cp -af $MODPATH/common/binary/$ARCH/fusermount3 $MODPATH/system/bin/fusermount3
 
 ui_print "+ Extracting syncd.sh script to $MODPATH/syncd.sh"
 cp -af $MODPATH/common/binary/syncd.sh $MODPATH/syncd.sh
