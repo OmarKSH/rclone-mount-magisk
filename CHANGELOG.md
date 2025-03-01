@@ -75,9 +75,9 @@
 * Make remount possible via `su -M -c`
 
 ### v1.3
-* Move user rclone.conf & related to `/sdcard/.rclone/`
-* Control global `--vfs-cache-mode` via simple files placed in `/sdcard/.rclone/`
-* Specify custom params for individual remotes via `/sdcard/.rclone/.REMOTENAME.params`
+* Move user rclone.conf & related to `/data/adb/rclone/`
+* Control global `--vfs-cache-mode` via simple files placed in `/data/adb/rclone/`
+* Specify custom params for individual remotes via `/data/adb/rclone/.REMOTENAME.params`
 
 ### v1.2
 * Change install process

@@ -4,7 +4,7 @@
 MODDIR=${MODDIR:-$(magisk --path)/.magisk/modules/rclone.mount}
 echo "Using 'rclone' binary: ${MODDIR}/rclone"
 
-USER_CONFDIR=/sdcard/.rclone
+USER_CONFDIR=/data/adb/rclone
 USER_CONF=${USER_CONFDIR}/rclone.conf
 CONFIGFILE=${MODDIR}/.config/rclone/rclone.conf
 LOGFILE=${USER_CONFDIR}/rclone.log

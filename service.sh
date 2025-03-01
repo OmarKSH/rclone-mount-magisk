@@ -8,7 +8,7 @@
 
 # MODULE VARS
 CLOUDROOTMOUNTPOINT=/mnt/cloud
-USER_CONFDIR=/sdcard/.rclone
+USER_CONFDIR=/data/adb/rclone
 USER_CONF=${USER_CONFDIR}/rclone.conf
 PROFILE=0
 DATA_MEDIA=/data/media

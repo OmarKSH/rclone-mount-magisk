@@ -38,13 +38,13 @@
 - Apps with ability to specify paths can access the remotes at `/mnt/cloud/`.
 - Most file explorers work just fine ([read more on this](https://github.com/Magisk-Modules-Repo/com.piyushgarg.rclone/issues/9)).
 - Mount points use names of remote(s) in rclone.conf
-- Specify custom rclone params for each remote via `/sdcard/.rclone/.REMOTE.param`
+- Specify custom rclone params for each remote via `/data/adb/rclone/.REMOTE.param`
 - Access remotes via HTTP or (S)FTP clients, or bind the remotes to `/sdcard/Cloud/REMOTE` (recommended to [read this](https://github.com/Magisk-Modules-Repo/com.piyushgarg.rclone/issues/5)).
 - Support for Work Profiles.
 
 ### Configuration
-1. Copy your `rclone.conf` file (if you have one already) to `/sdcard/.rclone/rclone.conf` (can always be generated later.)
-2. Add custom params at `/sdcard/.rclone/.[global/REMOTE].param` (if needed)
+1. Copy your `rclone.conf` file (if you have one already) to `/data/adb/rclone/rclone.conf` (can always be generated later.)
+2. Add custom params at `/data/adb/rclone/.[global/REMOTE].param` (if needed)
 3. Install the module via Magisk Manager
 4. Run `rclone config` via term if additional setup required
 4. All your rclone mount points will show up under `/mnt/cloud/` & `/storage/cloud/` or `/sdcard/cloud/`
@@ -55,7 +55,7 @@ For more detailed configuration of rclone please refer to [official documentatio
 - VLC  takes a long time to load media as it opens file in write mode when using it's internal browser.
 
    a. Create remote type alias for media dirs in rclone.conf and
-specify `CACHEMODE=off` in `/sdcard/.rclone/.ALIASNAME.param`
+specify `CACHEMODE=off` in `/data/adb/rclone/.ALIASNAME.param`
 
 - Encrypted devices can not mount until unlock
 - Encrypted `rclone.conf` causes reboots
